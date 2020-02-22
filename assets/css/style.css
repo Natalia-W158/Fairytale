@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 3em;
+    background-color: white;
+
+}
+h1{
+    text-align: center;
+
+}
+.panel > * {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+
+}
+
+
+.panel * {
+    box-sizing: border-box;
+}
+
+.panel {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20vw;
+    background-color: brown;
+
+}
+
+
+.panel:nth-child(odd) .image {
+    right: 0;
+}
+
+.panel:nth-child(even) .image {
+    left: 0;
+}
+
+.panel:nth-child(odd) .text {
+    left: 0;
+
+}
+
+
+.panel:nth-child(even) .text {
+    right: 0vw;
+}
+
+.panel:nth-child(1) .image {
+        background-image: url(https://media.giphy.com/media/cMALqIjmb7ygw/source.gif);
+        background-size: cover;
+}
+
+.panel:nth-child(2) .image {
+    background-image: url(https://media.giphy.com/media/VoImN3V2iRtiU/source.gif);
+    background-size: cover;
+}
+
+
+.panel:nth-child(3) .image {
+    background-image: url(https://media.giphy.com/media/iqyTS1hmcLoGI/source.gif);
+    background-size: cover;
+}
+
+.panel:nth-child(4) .image {
+    background-image: url(https://media.giphy.com/media/eaX8VABbbG7rq/source.gif);
+    background-size: cover;
+}
+
+.panel:nth-child(5) .image {
+    background-image: url(https://media.giphy.com/media/xT9DPOLRwLzOV695cc/source.gif);
+    background-size: cover;
+}
+
+.text p{
+    margin: 2.5px 0;
+    font-size: 1vw;
+}
+
+.text {
+    padding: 1em;
+}
